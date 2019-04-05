@@ -1,0 +1,5 @@
+WebApi/.vs
+WebApi/packages
+WebApi/WebApi/obj
+WebApi/WebApi/bin
+angular/node_modules/
