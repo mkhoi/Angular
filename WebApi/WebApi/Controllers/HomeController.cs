@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+﻿using WebApi.Models;
 using System.Web.Mvc;
 
 namespace WebApi.Controllers
@@ -10,6 +7,10 @@ namespace WebApi.Controllers
     {
         public ActionResult Index()
         {
+            DatabaseContext db = new DatabaseContext();
+            db.Users.Add(new User("Bi", "Bo", "BiBo"));
+            db.SaveChanges();
+
             ViewBag.Title = "Home Page";
 
             return View();
